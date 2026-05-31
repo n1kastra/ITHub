@@ -3,74 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStore</title>
+    <title>FitLife</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <h1>TechStore</h1>
+<header>
+    <nav class="navbar">
+        <h1>FitLife</h1>
 
-            <ul class="menu">
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#products">Товары</a></li>
-                <li><a href="#about">О нас</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="menu-info">
+            <p>Корзина: <span id="cart-count">0</span></p>
+            <button id="theme-btn">Сменить тему</button>
+        </div>
+    </nav>
+</header>
 
-    <main>
+<main>
 
-        <section class="hero" id="home">
-            <h2>Современные гаджеты для каждого</h2>
-            <p>Технологии, которые делают жизнь проще.</p>
-            <a href="#products" class="btn">Смотреть товары</a>
-        </section>
+    <section class="hero">
+        <h2>Спортивное питание для достижения целей</h2>
+        <p>Лучшие добавки для силы, массы и восстановления.</p>
 
-        <section class="products" id="products">
-            <h2>Наши товары</h2>
+        <a href="#products" class="hero-btn">
+            Подробнее
+        </a>
+    </section>
 
-            <div class="product-grid">
+    <section class="products" id="products">
 
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600" alt="Наушники">
-                    <h3>Наушники</h3>
-                    <p>Качественный звук и современный дизайн.</p>
-                    <button>Купить</button>
-                </article>
+        <h2>Популярные товары</h2>
 
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600" alt="Смартфон">
-                    <h3>Смартфон</h3>
-                    <p>Высокая производительность для любых задач.</p>
-                    <button>Купить</button>
-                </article>
+        <div class="product-grid">
 
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600" alt="Ноутбук">
-                    <h3>Ноутбук</h3>
-                    <p>Идеальное решение для учебы и работы.</p>
-                    <button>Купить</button>
-                </article>
+            <article class="card">
+                <img src="img/protein.jpg" alt="Протеин">
 
-            </div>
-        </section>
+                <h3>Протеин</h3>
 
-        <section class="about" id="about">
-            <h2>О компании</h2>
-            <p>
-                TechStore занимается продажей современной электроники.
-                Мы предлагаем качественные устройства по доступным ценам
-                и помогаем нашим клиентам выбирать лучшие технологии.
+                <p>Высококачественный сывороточный белок.</p>
+
+                <button class="buy-btn">В корзину</button>
+                <button class="remove-btn">-</button>
+            </article>
+
+            <article class="card">
+                <img src="img/creatine.jpg" alt="Креатин">
+
+                <h3>Креатин</h3>
+
+                <p>Увеличивает силу и выносливость.</p>
+
+                <button class="buy-btn">В корзину</button>
+                <button class="remove-btn">-</button>
+            </article>
+
+            <article class="card">
+                <img src="img/bcaa.jpg" alt="BCAA">
+
+                <h3>BCAA</h3>
+
+                <p>Помогает восстановлению мышц.</p>
+
+                <button class="buy-btn">В корзину</button>
+                <button class="remove-btn">-</button>
+            </article>
+
+        </div>
+
+    </section>
+
+    <section class="slider-section">
+
+        <h2>Отзывы клиентов</h2>
+
+        <div class="slider">
+
+            <button id="prev-btn">←</button>
+
+            <p id="slide-text">
+                Лучший магазин спортивного питания!
             </p>
-        </section>
 
-    </main>
+            <button id="next-btn">→</button>
 
-    <footer>
-        <p>© 2025 TechStore</p>
-    </footer>
+        </div>
+
+    </section>
+
+    <section class="form-section">
+
+        <h2>Оставить заявку</h2>
+
+        <form>
+
+            <input type="text" placeholder="Имя">
+
+            <input type="text" placeholder="Фамилия">
+
+            <input type="email" placeholder="Email">
+
+            <input type="tel" placeholder="Телефон">
+
+            <select>
+                <option>Интересующий товар</option>
+                <option>Протеин</option>
+                <option>Креатин</option>
+                <option>BCAA</option>
+            </select>
+
+            <button type="submit">
+                Отправить
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 FitLife</p>
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
